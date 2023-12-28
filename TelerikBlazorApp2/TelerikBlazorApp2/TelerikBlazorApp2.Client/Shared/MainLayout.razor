@@ -1,0 +1,25 @@
+﻿@layout TelerikLayout
+@inject HubConnector.Hub HubConnector;
+@inherits LayoutComponentBase
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <NavLink class="navbar-brand" href=@HubConnector.Url(0)>Dashboard</NavLink>
+            <NavLink class="navbar-brand" href=@HubConnector.Url(1)>App1</NavLink>
+        </div>
+    </nav>
+    <div class="top-row px-4">
+    </div>
+</header>
+<div>
+    <main role="main" class="pb-3">
+        @Body
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; @DateTime.Now.Year - TelerikBlazorApp2
+    </div>
+</footer>

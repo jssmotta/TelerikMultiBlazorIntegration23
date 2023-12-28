@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+	  <Platforms>AnyCPU</Platforms> 
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.0" />
+
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\HubConnector\HubConnector.csproj" />
+    <ProjectReference Include="..\TelerikBlazorApp1.Client\TelerikBlazorApp1.Client.csproj" />
+    <ProjectReference Include="..\TelerikBlazorApp1.Shared\TelerikBlazorApp1.Shared.csproj" />
+  </ItemGroup>
+</Project>
